@@ -60,9 +60,13 @@
     <section class="business" id="business">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-3"> <img src="/img/4111111.png" alt=""></div>
+                <div class="col-lg-7 ">
                     <div class="wrapper">
+
+
                         <div>
+
                             <h2 class="offer__intro">
                                 Бизнес аккаунт
                             </h2>
@@ -80,7 +84,8 @@
 
                     </div>
                     <div class="row">
-                        <div class="col-lg-12 d-flex justify-content-center ">
+                        <div class="col-lg-4"><img src="/img/circle.svg" alt=""></div>
+                        <div class="col-lg-8 d-flex justify-content-center ">
                             <div class="profit">
                                 <div class="profit__item">
                                     <div><img class="profit__ico" src="/img/EllipseMin.png" alt=""></div>
@@ -111,7 +116,7 @@
     </section>
     <section id="differences" class="differences">
         <div class="container">
-
+            <h2 class="differences__title">Отличия</h2>
         </div>
 
     </section>
@@ -201,6 +206,106 @@
         </div>
 
     </section>
+
+    <section id="logistic" class="logistic">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <h2 class="logistic__title">Процесс логистики</h2>
+            </div>
+            <div class="row logistic ">
+                <div class="col-lg-3 logistic__text">
+                    <p>Выкуп товара</p>
+
+                </div>
+                <div class="col-lg-3 logistic__text">
+                    <p>Доставка по Китаю</p>
+
+                </div>
+                <div class="col-lg-3 logistic__text">
+                    <p>Получение на складе</p>
+
+                </div>
+                <div class="col-lg-3 logistic__text">
+                    <p>Сортировка</p>
+
+                </div>
+                <div class="col-lg-3 logistic__text">
+                    <p>Таможенное оформление</p>
+
+                </div>
+                <div class="col-lg-3 logistic__text">
+                    <p>Получение на складе в Бишкеке</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners__carousele">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <h3 class="partners__carousele-text">Наши партнеры</h3>
+            </div>
+            <div class="row">
+                    <div class="mySlides">     
+                            <div class="text-slideshow fade">                   
+                                <img style="margin-right: 30px" src="img/splus-logo.svg" alt="forwater"> 
+                                <img style="margin-right: 30px" src="img/fla-logo.svg" alt="forwater"> 
+                                <img  src="img/golf-logo.svg" alt="forwater">  
+                            </div>
+                          </div>    
+                          <div class="mySlides fade">     
+                            <div class="text-slideshow">
+                                <img src="img/sanxing-logo.svg" alt="forwater">  
+                                <img  src="img/forwater-logo.svg" alt="forwater"> 
+                                <img src="img/tech-logo.svg" alt="forwater">  
+                            </div>
+                          </div> 
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-2">
+                    <div class="footer__container">
+                        <img class="footer__logo" src="/img/logo white.png" alt="logo">
+                        <p class="footer__text">© 2015-2019 <br> ooba.kg</p>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-5">
+                    <p class="footer__text">Ооба – это сервис доставки товаров из-за рубежа. С помощью Ооба вы получите
+                        возможность совершать
+                        покупки на любых интернет магазинах Китая, а комплекс услуг нашего сервиса поможет вам сделать
+                        это легко и выгодно!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); 
+            }
+            </script>
 </body>
 
 </html>
