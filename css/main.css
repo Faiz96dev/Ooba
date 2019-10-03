@@ -1,4 +1,4 @@
-/* Спецификация */
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -11,6 +11,126 @@ ul, li {
 }
 
 
+h1, h2, h3, h4{
+    font-weight: bold;
+    color: #000000;
+}
 
 
+.header{
+    padding-top: 20px;
+}
 
+.offer__title{
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 132px;
+}
+
+.offer__btn{
+    margin-top: 32px;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    background: #592D87;
+    width: 154px;
+    height: 38px;
+    color: white;
+    font-family: Roboto;
+    font-size: 13px;
+}
+
+.offer__truck{
+    padding-top: 121px;
+}
+
+.offer__intro{
+    margin-top: 50px;
+}
+
+.offer__text{
+    width: 462px;
+}
+
+.offer__itro-text-container{
+    display: flex;
+    flex-direction: column
+}
+
+.offer__descr{
+    width: 611px;
+    /* text-align: center */
+    padding-top: 38px;
+}
+
+.offer__line-top{
+    height: 50px;
+    margin-top: 30px;
+    padding-right: 92px;
+    
+}
+
+.offer__line-bot{
+    height: 50px;
+    margin-top: 130px;
+    padding-left: 92px;
+    
+}
+
+.wrapper{
+    /* display: flex; */
+}
+
+.business__partner{
+    
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+color: #000000;
+}
+.profit__item{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 17px;
+    justify-content: flex-start;
+}
+.profit{
+    padding-top: 17px;
+}
+
+.profit__ico{
+    margin-right: 20px;
+}
+
+.profit__text{
+    font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+color:black
+}
+
+.delivery__title{
+   color: white;
+   margin-top: 52px;
+   font-weight: bold;
+font-size: 36px;
+line-height: 49px;
+
+}
+
+.delivery{
+    background: #330570;
+}
+
+.delivery__text{
+    color:white;
+    font-size: 18px;
+}
+
+.delivery__item{
+    padding-top: 30px;
+    padding-bottom: 52px;
+}
