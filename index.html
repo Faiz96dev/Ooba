@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ooba Business</title>
+  
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700i&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link href="css/animate.css" rel="stylesheet">
+
 </head>
 
 <body>
+
     <header id="header" class="header">
         <div class="container ">
             <div class="row justify-content-between ">
@@ -22,10 +26,10 @@
 
             </div>
 
-            <div class="row">
+            <div class="row ">
                 <div class="col-lg-6">
-                    <div class="offer">
-                        <h1 class="offer__title">
+                    <div class="offer animated fadeInDown">
+                        <h1 class="offer__title ">
                             Ooba Business - постройте бизнес с Китаем с нами!
                         </h1>
                         <button type="submit" class="offer__btn">Перейти на сайт</button>
@@ -39,7 +43,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6  d-flex justify-content-end offer__truck"><img src="/img/Group 2.svg" alt=""></div>
+                <div class="col-lg-6  d-flex justify-content-end offer__truck"><img class="animated fadeInUp"
+                        src="/img/Group 2.svg" alt=""></div>
             </div>
             <div class="row  d-flex justify-content-center">
                 <div class="col-lg-10 d-flex justify-content-center">
@@ -87,7 +92,7 @@
                         </div>
 
                     </div>
-                    <div class="container">
+                    <div class="container ">
                         <div class="row d-flex justify-content-end">
                             <div class="col-lg-5 ">
                                 <div class="horizont-grey">
@@ -315,7 +320,9 @@
                 <div class="col-lg-2">
                     <img class="partner__card-icon" src="/img/partner/chat.png" alt="">
                     <p class="partner__card-text">Предоставление услуги переводчика в Гуанчжоу </p>
+                    <div class=""><img src="/img/horizont-purple-line.png" alt=""></div>
                 </div>
+
             </div>
         </div>
 
@@ -372,22 +379,18 @@
             <div class="row d-flex justify-content-center">
                 <h3 class="partners__carousele-text">Наши партнеры</h3>
             </div>
-            <div class="row">
-                <div class="mySlides">
-                    <div class="text-slideshow fade">
-                        <img style="margin-right: 30px" src="img/splus-logo.svg" alt="forwater">
-                        <img style="margin-right: 30px" src="img/fla-logo.svg" alt="forwater">
-                        <img src="img/golf-logo.svg" alt="forwater">
-                    </div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="text-slideshow">
-                        <img src="img/sanxing-logo.svg" alt="forwater">
-                        <img src="img/forwater-logo.svg" alt="forwater">
-                        <img src="img/tech-logo.svg" alt="forwater">
-                    </div>
+            <div class="col-lg-12 d-flex justify-content-center">
+                <div class="row">
+                    <img src="/img/partner-logo/fla-logo.png" alt="">
+                    <img src="/img/partner-logo/forwater-logo.png" alt="">
+                    <img src="/img/partner-logo/golf-logo.png" alt="">
+                    <img src="/img/partner-logo/sanxing-logo-1.png" alt="">
+                    <img src="/img/partner-logo/splus-logo-1.png" alt="">
+                    <img src="/img/partner-logo/tech-logo-1.png" alt="">
+
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -410,28 +413,11 @@
                 </div>
             </div>
         </div>
+        <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+	    
     </footer>
-    <script>
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000);
-        }
-    </script>
+ 
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
