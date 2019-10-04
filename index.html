@@ -13,10 +13,12 @@
 
 <body>
     <header id="header" class="header">
-        <div class="container">
-            <div class="row">
+        <div class="container ">
+            <div class="row justify-content-between ">
                 <div class="col-lg-2"><img src="./img/Logo.svg" alt="logo"></div>
-                <div class="col-lg-2 ml-auto"><img src="/img/Burger.png" alt=""></div>
+                <div class="col-lg-1 d-flex justify-content-end ">
+                    <div><img src="/img/Burger.png" alt=""></div>
+                </div>
 
             </div>
 
@@ -37,9 +39,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 ml-auto offer__truck"><img src="/img/Group 2.svg" alt=""></div>
+                <div class="col-lg-6  d-flex justify-content-end offer__truck"><img src="/img/Group 2.svg" alt=""></div>
             </div>
-            <div class="row">
+            <div class="row  d-flex justify-content-center">
                 <div class="col-lg-10 d-flex justify-content-center">
                     <img class="offer__line-top" src="/img/Rectangle 17.7.png" alt="">
                     <p class="offer__descr"> Планируете делать серьезные оптовые закупки в Китае?<br> Хотите расширить
@@ -60,20 +62,22 @@
     <section class="business" id="business">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3"> <img src="/img/4111111.png" alt=""></div>
+                <div class="col-lg-3"> <img src="/img/4111111.png" alt=""><img class="circle" src="/img/circle.svg"
+                        alt="circle"></div>
                 <div class="col-lg-7 ">
-                    <div class="wrapper">
 
 
-                        <div>
+                    <div class="container">
+                        <h2 class="offer__intro">
+                            Бизнес аккаунт
+                        </h2>
+                        <p class="offer__text">Это специальные условия, для деловых людей, которые ценят свое время
+                            и деньги.</p>
 
-                            <h2 class="offer__intro">
-                                Бизнес аккаунт
-                            </h2>
-                            <p class="offer__text">Это специальные условия, для деловых людей, которые ценят свое время
-                                и деньги.</p>
-                        </div>
+
                     </div>
+
+
 
                     <div class="row">
                         <div class="col-lg-12 d-flex justify-content-center">
@@ -83,9 +87,19 @@
                         </div>
 
                     </div>
-                    <div class="row">
-                        <div class="col-lg-4"><img src="/img/circle.svg" alt=""></div>
-                        <div class="col-lg-8 d-flex justify-content-center ">
+                    <div class="container">
+                        <div class="row d-flex justify-content-end">
+                            <div class="col-lg-5 ">
+                                <div class="horizont-grey">
+                                    <img src="/img/horizont-grey.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row  d-flex justify-content-center">
+                        <!-- <div class="col-lg-4"></div> -->
+                        <div class="col-lg-8  d-flex justify-content-end ">
                             <div class="profit">
                                 <div class="profit__item">
                                     <div><img class="profit__ico" src="/img/EllipseMin.png" alt=""></div>
@@ -114,10 +128,110 @@
 
         </div>
     </section>
+
     <section id="differences" class="differences">
-        <div class="container">
-            <h2 class="differences__title">Отличия</h2>
+        <div class="container ">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-3">
+                    <h2 class="differences__title">Отличия</h2>
+                </div>
+            </div>
         </div>
+        <div class="container d-flex justify-content-center">
+            <div class="col-lg-9 ">
+                <table class=" table table-borderless">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Обычный аккаунт</th>
+                            <th scope="col">Бизнесс аккаунт </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Отслеживание посылки</th>
+
+                            <td><img src="/img/yep.png" alt=""></td>
+                            <td><img src="/img/yep.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Таможенные консультации</th>
+                            <td><img src="/img/yep.png" alt=""></td>
+                            <td><img src="/img/yep.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Персональный специалист</th>
+                            <td><img src="/img/yep.png" alt=""></td>
+                            <td><img src="/img/yep.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Индивидуальный тариф</th>
+                            <td><img src="/img/no.png" alt=""></td>
+                            <td><img src="/img/yep.png" alt=""></td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">Доступ к платформам Taobao Tmall</th>
+                            <td><img src="/img/no.png" alt=""></td>
+                            <td><img src="/img/yep.png" alt=""></td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">Доступ к платформам 1168 Alibaba</th>
+                            <td><img src="/img/no.png" alt=""></td>
+                            <td><img src="/img/yep.png" alt=""></td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">Поиск нужного товара</th>
+                            <td><img src="/img/no.png" alt=""></td>
+                            <td><img src="/img/yep.png" alt=""></td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">Помощь в выборе товара</th>
+                            <td><img src="/img/no.png" alt=""></td>
+                            <td><img src="/img/yep.png" alt=""></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="horizont-grey">
+                        <img src="/img/horizont-grey.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container">
+
+            <div class="row  d-flex justify-content-center taobao-container ">
+                <div class="col-lg-1 mr-auto d-flex align-items-end ">
+                    <div><img src="/img/grey-left.png" alt=""></div>
+                </div>
+
+                <div class="col-lg-4">
+                    <img class="taobao__logo" src="/img/TaoBaoLogo.svg" alt="">
+                    <p>Ooba - единственный сертифицированный партнер торговой площадки taobao.com в Кыргызстане</p>
+                </div>
+                <div class="col-lg-1 ml-auto d-flex align-items-end justify-content-end">
+                    <div class="taobao__line-left"><img src="/img/violet-right.png" alt=""></div>
+                </div>
+            </div>
+            <div class="taobao__line-right"></div>
+        </div>
+
 
     </section>
 
@@ -213,27 +327,39 @@
                 <h2 class="logistic__title">Процесс логистики</h2>
             </div>
             <div class="row logistic ">
-                <div class="col-lg-3 logistic__text">
+
+                <div class="col-lg-12  d-flex logistic__text">
+                    <div><img class="logistic__gantelya" src="/img/гантеля 2.svg" alt=""></div>
                     <p>Выкуп товара</p>
 
                 </div>
-                <div class="col-lg-3 logistic__text">
-                    <p>Доставка по Китаю</p>
+                <div class="col-lg-12  d-flex logistic__text">
+                    <div><img class="logistic__gantelya" src="/img/гантеля 2.svg" alt=""></div>
+                    <p>Доставка по Китаю </p>
 
                 </div>
-                <div class="col-lg-3 logistic__text">
+                <div class="col-lg-12  d-flex logistic__text">
+                    <div><img class="logistic__gantelya" src="/img/гантеля 2.svg" alt=""></div>
                     <p>Получение на складе</p>
 
                 </div>
-                <div class="col-lg-3 logistic__text">
+                <div class="col-lg-12  d-flex logistic__text">
+                    <div><img class="logistic__gantelya" src="/img/гантеля 2.svg" alt=""></div>
                     <p>Сортировка</p>
 
                 </div>
-                <div class="col-lg-3 logistic__text">
+                <div class="col-lg-12  d-flex logistic__text">
+                    <div><img class="logistic__gantelya" src="/img/гантеля 2.svg" alt=""></div>
+                    <p>Отправка в Кыргызстан</p>
+
+                </div>
+                <div class="col-lg-12  d-flex logistic__text">
+                    <div><img class="logistic__gantelya" src="/img/гантеля 2.svg" alt=""></div>
                     <p>Таможенное оформление</p>
 
                 </div>
-                <div class="col-lg-3 logistic__text">
+                <div class="col-lg-12  d-flex logistic__text">
+                    <div><img class="logistic__gantelya" src="/img/гантеля 2.svg" alt=""></div>
                     <p>Получение на складе в Бишкеке</p>
 
                 </div>
@@ -247,20 +373,20 @@
                 <h3 class="partners__carousele-text">Наши партнеры</h3>
             </div>
             <div class="row">
-                    <div class="mySlides">     
-                            <div class="text-slideshow fade">                   
-                                <img style="margin-right: 30px" src="img/splus-logo.svg" alt="forwater"> 
-                                <img style="margin-right: 30px" src="img/fla-logo.svg" alt="forwater"> 
-                                <img  src="img/golf-logo.svg" alt="forwater">  
-                            </div>
-                          </div>    
-                          <div class="mySlides fade">     
-                            <div class="text-slideshow">
-                                <img src="img/sanxing-logo.svg" alt="forwater">  
-                                <img  src="img/forwater-logo.svg" alt="forwater"> 
-                                <img src="img/tech-logo.svg" alt="forwater">  
-                            </div>
-                          </div> 
+                <div class="mySlides">
+                    <div class="text-slideshow fade">
+                        <img style="margin-right: 30px" src="img/splus-logo.svg" alt="forwater">
+                        <img style="margin-right: 30px" src="img/fla-logo.svg" alt="forwater">
+                        <img src="img/golf-logo.svg" alt="forwater">
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="text-slideshow">
+                        <img src="img/sanxing-logo.svg" alt="forwater">
+                        <img src="img/forwater-logo.svg" alt="forwater">
+                        <img src="img/tech-logo.svg" alt="forwater">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -286,26 +412,26 @@
         </div>
     </footer>
     <script>
-            let slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 2000); 
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
-            </script>
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
 </body>
 
 </html>
