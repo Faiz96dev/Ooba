@@ -265,7 +265,7 @@ footer {
     padding-top: 20px;
 }
 
-;
+
 
 .footer__wrapper {
 }
@@ -297,17 +297,11 @@ footer {
       height: 60px;
   }
 
-  .mySlides .text-slideshow {
-    padding: 0px 55px;
+
+  .partner__container{
+      /* height: 100px; */
+      width: 500px;
+     
+      
   }
-  @media screen and (max-width: 596px) { 
-    .mySlides {
-      height: 300px;
-      width: 229px;
-    }
-  }
-  @media screen and (max-width: 420px) { 
-    .mySlides {   
-      height: 250px;   
-    }
-  }
+
