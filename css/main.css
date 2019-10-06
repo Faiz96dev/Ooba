@@ -43,12 +43,13 @@ h4 {
     font-size: 13px;
 }
 
-.offer__truck {
+.offer__truck-container {
     padding-top: 121px;
 }
 
 .offer__intro {
     margin-top: 50px;
+    font-weight: bold
 }
 
 .offer__text {
@@ -227,7 +228,7 @@ h4 {
 
 .logistic__gantelya {
     padding-right: 22px;
-    max-width: 1000%;
+    max-width: 40%;
     height: auto;
     display: flex;
     flex-direction: row
@@ -267,41 +268,428 @@ footer {
 
 
 
-.footer__wrapper {
-}
+.footer__wrapper {}
 
-#button-up{
-    display: none;	
-    opacity:0.5;
+#button-up {
+    display: none;
+    opacity: 0.5;
     /* filter:alpha(opacity=50); */
     position: fixed;
     right: 30px;
-    bottom: 50px;			
+    bottom: 50px;
     color: #000;
     transition: .3s;
     font-size: 20px;
     font-weight: bold;
     font-family: Roboto;
-    
 
-  }
-   
-  #button-up:hover{
+
+}
+
+#button-up:hover {
     cursor: pointer;
     /* opacity: 1; */
-    filter:alpha(opacity=100);
+    filter: alpha(opacity=100);
     transition: .3s;
     color: #330570;
-  }
-  .top{
-      height: 60px;
-  }
+}
+
+.top {
+    height: 60px;
+}
 
 
-  .partner__container{
-      /* height: 100px; */
-      width: 500px;
-     
-      
-  }
+.partner__container {
+    /* height: 100px; */
+    width: 500px;
 
+
+}
+
+.partner__logo {
+    height: 173px
+}
+
+
+
+
+
+@media (max-width: 575.98px) {
+    #offer__truck {
+        display: none;
+
+    }
+
+    .offer__truck-container {
+        display: none
+    }
+
+    .offer__title {
+        font-size: 30px
+    }
+
+    .decor-block {
+        display: none
+    }
+
+    .offer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+
+    .offer__btn {
+        justify-content: center;
+        align-items: center;
+        margin-left: 40%;
+    }
+
+    .offer__title {
+        margin-top: 30px;
+    }
+
+    .profit_wrap {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .profit__item {
+        justify-content: center
+    }
+
+    .taobao__line-left {
+        display: none
+    }
+
+    #taobao__line-right {
+        display: none
+    }
+
+    .delivery__item {
+        margin-right: 15%;
+        /* padding-bottom: 10px; */
+
+    }
+
+    .delivery__title {
+        color: white;
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 49px;
+
+    }
+
+    .delivery__text {
+        font-size: 15px
+    }
+
+    .partner__title {
+        font-size: 30px
+    }
+
+    .taobao-container {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .partner__block-container {
+        display: flex;
+        /* justify-content: center */
+        /* width: 100%; */
+    }
+
+    .partner__block {
+        display: flex;
+        justify-content: center;
+        /* background: #000; */
+
+    }
+
+    .partner__card-text {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .partner__card-icon {
+        margin-left: 30%;
+
+    }
+
+    .logistic__gantelya {
+        display: none
+    }
+
+
+    .logistic__text {
+        justify-content: center;
+
+    }
+
+    .partner__container {
+        display: none
+    }
+
+    .offer__text {
+        width: 300px;
+    }
+
+    .offer__descr {
+        width: 90%;
+        /* text-align: center */
+        padding-top: 38px;
+    }
+
+    .offer__line-bot {
+        display: none
+    }
+
+    .offer__line-top {
+        display: none
+    }
+
+}
+
+
+
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #offer__truck {
+        display: none;
+
+    }
+
+    .offer__truck-container {
+        display: none
+    }
+
+    .offer__title {
+        font-size: 40px
+    }
+
+    .decor-block {
+        display: none
+    }
+
+    .offer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+
+    .offer__btn {
+        justify-content: center;
+        align-items: center;
+        margin-left: 40%;
+    }
+
+    .offer__title {
+        margin-top: 30px;
+    }
+
+    .profit_wrap {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .profit__item {
+        justify-content: center
+    }
+
+    .taobao__line-left {
+        display: none
+    }
+
+    #taobao__line-right {
+        display: none
+    }
+
+    .delivery__item {
+        margin-left: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .delivery__title {
+        color: white;
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 49px;
+
+    }
+
+    .taobao-container {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .partner__block-container {
+        display: flex;
+        /* justify-content: center */
+        /* width: 100%; */
+    }
+
+    .partner__block {
+        display: flex;
+        justify-content: center;
+        /* background: #000; */
+
+    }
+
+    .partner__card-text {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .partner__card-icon {
+        margin-left: 30%;
+
+    }
+
+    .logistic__gantelya {
+        display: none
+    }
+
+
+    .logistic__text {
+        justify-content: center;
+
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #offer__truck {
+        display: none;
+
+    }
+
+    .offer__truck-container {
+        display: none
+    }
+
+    .offer__title {
+        font-size: 40px
+    }
+
+    .decor-block {
+        display: none
+    }
+
+    .offer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+
+    .offer__btn {
+        justify-content: center;
+        align-items: center;
+        margin-left: 40%;
+    }
+
+    .offer__title {
+        margin-top: 30px;
+    }
+
+    .profit_wrap {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .profit__item {
+        justify-content: center
+    }
+
+    .taobao__line-left {
+        display: none
+    }
+
+    #taobao__line-right {
+        display: none
+    }
+
+    .delivery__item {
+        margin-left: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .delivery__title {
+        color: white;
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 49px;
+
+    }
+
+    .taobao-container {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .partner__block-container {
+        display: flex;
+        /* justify-content: center */
+        /* width: 100%; */
+    }
+
+    .partner__block {
+        display: flex;
+        justify-content: center;
+        /* background: #000; */
+
+    }
+
+    .partner__card-text {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .partner__card-icon {
+        margin-left: 30%;
+
+    }
+
+    .logistic__gantelya {
+        display: none
+    }
+
+
+    .logistic__text {
+        justify-content: center;
+
+    }
+
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .offer__min-truck {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .offer__min-truck {
+        display: none;
+    }
+
+}
