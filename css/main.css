@@ -43,6 +43,10 @@ h4 {
     font-size: 13px;
 }
 
+.offer__btn:focus {
+    outline: none;
+}
+
 .offer__truck-container {
     padding-top: 121px;
 }
@@ -228,10 +232,19 @@ h4 {
 
 .logistic__gantelya {
     padding-right: 22px;
-    max-width: 40%;
+    /* max-width: 40%; */
     height: auto;
     display: flex;
     flex-direction: row
+}
+
+
+
+.partner__logo-mobile {}
+
+.mob {
+    display: flex;
+    justify-content: center
 }
 
 .partners__carousele {
@@ -309,6 +322,148 @@ footer {
 .partner__logo {
     height: 173px
 }
+
+.footer__contact {
+    color: white;
+    display: flex;
+
+}
+
+.footer__phone {
+    padding-right: 10px;
+}
+
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 5px; */
+}
+
+.modal__window {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    /* margin-right: 10px; */
+    text-indent: 10px;
+
+}
+
+.modal__btn {
+    margin-bottom: 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: #592D87;
+    width: 154px;
+    height: 38px;
+    color: white;
+    font-family: Roboto;
+    font-size: 13px;
+
+}
+
+.modal__btn:focus {
+    outline: none;
+}
+
+.modal__btn-wrapper {
+    display: flex;
+    justify-content: center
+}
+
+.modal-title {
+    font-weight: bold
+}
+
+.modal__window {
+    outline: none;
+}
+
+input::placeholder {
+    color: #444444;
+    font-size: 12px;
+    font-size: 1.2em;
+    outline: none;
+    /* font-style: italic; */
+}
+
+
+
+
+
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #FAFAFA;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 0px 5.5px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+
+    color: #555555;
+    display: block;
+    transition: 0.3s;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.sidebar a:hover {
+    color: #330570
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: #330570;
+    border: none;
+}
+
+.openbtn:hover {
+    /* background-color: #444; */
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+
 
 
 
@@ -560,6 +715,9 @@ footer {
         display: none
     }
 
+    .partner__container {
+        display: none
+    }
 
     .logistic__text {
         justify-content: center;
@@ -676,6 +834,10 @@ footer {
 
     }
 
+    .mobile {
+        display: none
+    }
+
 
 }
 
@@ -685,11 +847,19 @@ footer {
         display: none;
     }
 
+    .mobile {
+        display: none
+    }
+
 }
 
 @media (min-width: 1200px) {
     .offer__min-truck {
         display: none;
+    }
+
+    .mobile {
+        display: none
     }
 
 }
