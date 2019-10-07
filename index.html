@@ -30,13 +30,13 @@
         <div class="container ">
 
             <div class="row justify-content-between ">
-                <div class="col-lg-2"><img class="animated flipInX" src="img/Logo.svg" alt="logo"></div>
-                <div class="col-lg-1 d-flex justify-content-end ">
-                    <div id="main">
+                <div class="col-lg-12 d-flex justify-content-between"><img class="animated flipInX" src="img/Logo.svg" alt="logo">  <div id="main">
                         <button class="openbtn" onclick="openNav()">☰ </button>
 
-                    </div>
-                </div>
+                    </div></div>
+                <!-- <div class="col-lg-1 d-flex justify-content-end ">
+                   
+                </div> -->
             </div>
             <div class="row ">
                 <div class="col-lg-6">
@@ -45,8 +45,7 @@
                             Ooba Business - постройте бизнес с Китаем с нами!
                         </h1>
                         <img class="offer__min-truck" src="img/Truck-min.svg" alt="">
-                        <button type="submit" data-toggle="modal" data-target="#basicExampleModal"
-                            class="offer__btn">Перейти на сайт</button>
+                        <button  data-toggle="modal" data-target="#basicExampleModal" class="offer__btn">Заказать звонок</button>
                         <div class="offer__itro-text-container">
                             <h2 class="offer__intro"> О нашем сервисе</h2>
                             <p class="offer__text"> Мы работаем над тем, чтобы дать нашим партнерам больше возможностей
@@ -142,19 +141,19 @@
             </div>
         </div>
 
-        <div id="difference"></div> 
+        <div id="difference"></div>
     </section>
     <section id="differences" class="differences">
         <div class="container ">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-3">
-                    
+
                     <h2 class="differences__title">Отличия</h2>
                 </div>
             </div>
         </div>
         <div class="container d-flex justify-content-center">
-            <div class="col-lg-9 ">
+            <div class="col-lg-9 table__diff">
                 <table class=" table table-borderless">
                     <thead>
                         <tr>
@@ -165,47 +164,47 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">Отслеживание посылки</th>
+                            <th scope="row"><p>Отслеживание посылки</p></th>
 
                             <td><img src="img/yep.png" alt=""></td>
                             <td><img src="img/yep.png" alt=""></td>
                         </tr>
                         <tr>
-                            <th scope="row">Таможенные консультации</th>
+                            <th scope="row"><p>Таможенные консультации</p></th>
                             <td><img src="img/yep.png" alt=""></td>
                             <td><img src="img/yep.png" alt=""></td>
                         </tr>
                         <tr>
-                            <th scope="row">Персональный специалист</th>
+                            <th scope="row"><p>Персональный специалист</p></th>
                             <td><img src="img/yep.png" alt=""></td>
                             <td><img src="img/yep.png" alt=""></td>
                         </tr>
                         <tr>
-                            <th scope="row">Индивидуальный тариф</th>
+                            <th scope="row"><p>Индивидуальный тариф</p></th>
                             <td><img src="img/no.png" alt=""></td>
                             <td><img src="img/yep.png" alt=""></td>
 
                         </tr>
                         <tr>
-                            <th scope="row">Доступ к платформам Taobao Tmall</th>
+                            <th scope="row"><p>Доступ к платформам Taobao Tmall</p></th>
                             <td><img src="img/no.png" alt=""></td>
                             <td><img src="img/yep.png" alt=""></td>
 
                         </tr>
                         <tr>
-                            <th scope="row">Доступ к платформам 1168 Alibaba</th>
+                            <th scope="row"><p>Доступ к платформам 1168 Alibaba</p></th>
                             <td><img src="img/no.png" alt=""></td>
                             <td><img src="img/yep.png" alt=""></td>
 
                         </tr>
                         <tr>
-                            <th scope="row">Поиск нужного товара</th>
+                            <th scope="row"><p>Поиск нужного товара</p></th>
                             <td><img src="img/no.png" alt=""></td>
                             <td><img src="img/yep.png" alt=""></td>
 
                         </tr>
                         <tr>
-                            <th scope="row">Помощь в выборе товара</th>
+                            <th scope="row"><p>Помощь в выборе товара</p></th>
                             <td><img src="img/no.png" alt=""></td>
                             <td><img src="img/yep.png" alt=""></td>
 
@@ -508,12 +507,14 @@
 
         <script src="js/script.js"></script>
         <div id="mySidebar" class="sidebar">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <a href="#"> <img src="img/nav-icons/phone.png" alt=""> Заказать звонк</a>
-                <a href="#"> <img src="img/nav-icons/circle-arr.png" alt=""> Перейти на сайт</a>
-                <a href="#business"> <img src="img/nav-icons/bag.png" alt=""> Бизнес аккаунт</a>
-                <a href="#difference"> <img src="img/nav-icons/arrows.png" alt=""> Отличия</a>
-            </div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a data-toggle="modal" data-target="#basicExampleModal" href="#"> <img src="img/nav-icons/phone.png" alt="">
+                Заказать звонк</a>
+            <a onclick="window.location.href='http://ooba.kg/'"> <img src="img/nav-icons/circle-arr.png" alt=""> Перейти
+                на сайт</a>
+            <a href="#business"> <img src="img/nav-icons/bag.png" alt=""> Бизнес аккаунт</a>
+            <a href="#difference"> <img src="img/nav-icons/arrows.png" alt=""> Отличия</a>
+        </div>
 </body>
 
 </html>

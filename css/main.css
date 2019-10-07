@@ -18,6 +18,10 @@ h4 {
     color: #000000;
 }
 
+body{
+    padding: 0;
+    margin: 0;
+}
 
 .header {
     padding-top: 20px;
@@ -261,8 +265,13 @@ h4 {
 }
 
 
+th{
+    padding-right: 0;
+}
 
-
+.partner__logo-mobile{
+    /* margin-left: 5px; */
+}
 
 footer {
     background-color: #330570;
@@ -462,9 +471,13 @@ input::placeholder {
         font-size: 18px;
     }
 
-    #main{
+    #main {
         /* display: none */
     }
+
+   
+
+   
 }
 
 
@@ -594,7 +607,7 @@ input::placeholder {
     }
 
     .offer__text {
-        width: 300px;
+        width: 250px;
     }
 
     .offer__descr {
@@ -611,18 +624,47 @@ input::placeholder {
         display: none
     }
 
-    #main{
+    #main {
         /* display: none; */
     }
+
     .sidebar {
         height: 180px;
-        opacity: 0.9 ;
+        opacity: 0.9;
         width: 180px;
-    
+
     }
-    .sidebar a{
+
+    .sidebar a {
         padding-left: 5px;
         padding-top: 1px;
+    }
+
+ 
+    .mob img{
+        width: 150px
+    }
+
+    td img{
+       /* padding-top: 40px; */
+       /* display: none */
+    }
+
+    th p{
+       /* display: none */
+       font-size: 15px; 
+       width: 48px;
+       margin-right: 48px;
+       
+    }
+
+    .table__diff{
+        /* width: 100px */
+        /* display: none */
+    }
+
+    .vetrtical-big{
+        display: none
     }
 }
 
@@ -741,10 +783,10 @@ input::placeholder {
 
     }
 
-    #main{
+    #main {
         display: none;
     }
-    
+
 }
 
 
@@ -823,13 +865,13 @@ input::placeholder {
 
     .partner__block-container {
         display: flex;
-    
+
     }
 
     .partner__block {
         display: flex;
         justify-content: center;
-       
+
 
     }
 
@@ -859,7 +901,7 @@ input::placeholder {
         display: none
     }
 
-    #main{
+    #main {
         /* display: none; */
     }
 
@@ -889,11 +931,12 @@ input::placeholder {
     .mobile {
         display: none
     }
+
     .sidebar {
         height: 230px;
-        opacity: 0.9 ;
+        opacity: 0.9;
         width: 200px;
-    
+
     }
 
 }
