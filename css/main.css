@@ -48,7 +48,7 @@ h4 {
 }
 
 .offer__truck-container {
-    padding-top: 121px;
+    padding-top: 30px;
 }
 
 .offer__intro {
@@ -399,11 +399,12 @@ input::placeholder {
     height: 100%;
     width: 0;
     position: fixed;
+    opacity: 0.9;
     z-index: 1;
     top: 0;
     right: 0;
     background-color: #FAFAFA;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     transition: 0.5s;
     padding-top: 60px;
     box-shadow: 0px 5.5px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
@@ -416,7 +417,6 @@ input::placeholder {
     color: #555555;
     display: block;
     transition: 0.3s;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -430,10 +430,10 @@ input::placeholder {
 
 .sidebar .closebtn {
     position: absolute;
-    top: 0;
-    right: 25px;
+    top: 10px;
+    /* right: 25px; */
     font-size: 36px;
-    margin-left: 50px;
+    /* margin-left: 10px; */
 }
 
 .openbtn {
@@ -444,7 +444,7 @@ input::placeholder {
 }
 
 .openbtn:hover {
-    /* background-color: #444; */
+    background-color: #330570;
 }
 
 #main {
@@ -460,6 +460,10 @@ input::placeholder {
 
     .sidebar a {
         font-size: 18px;
+    }
+
+    #main{
+        /* display: none */
     }
 }
 
@@ -607,6 +611,19 @@ input::placeholder {
         display: none
     }
 
+    #main{
+        /* display: none; */
+    }
+    .sidebar {
+        height: 180px;
+        opacity: 0.9 ;
+        width: 180px;
+    
+    }
+    .sidebar a{
+        padding-left: 5px;
+        padding-top: 1px;
+    }
 }
 
 
@@ -723,6 +740,11 @@ input::placeholder {
         justify-content: center;
 
     }
+
+    #main{
+        display: none;
+    }
+    
 }
 
 
@@ -801,14 +823,13 @@ input::placeholder {
 
     .partner__block-container {
         display: flex;
-        /* justify-content: center */
-        /* width: 100%; */
+    
     }
 
     .partner__block {
         display: flex;
         justify-content: center;
-        /* background: #000; */
+       
 
     }
 
@@ -838,6 +859,24 @@ input::placeholder {
         display: none
     }
 
+    #main{
+        /* display: none; */
+    }
+
+    .sidebar {
+        height: 230px;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #FAFAFA;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        box-shadow: 0px 5.5px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
+    }
+
 
 }
 
@@ -849,6 +888,12 @@ input::placeholder {
 
     .mobile {
         display: none
+    }
+    .sidebar {
+        height: 230px;
+        opacity: 0.9 ;
+        width: 200px;
+    
     }
 
 }
