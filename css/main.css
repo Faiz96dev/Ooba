@@ -210,7 +210,7 @@ body{
 }
 
 .logistic {
-    padding-top: 58px;
+    padding-top: 2 0px;
 
 }
 
@@ -453,13 +453,63 @@ input::placeholder {
 }
 
 .openbtn:hover {
-    background-color: #330570;
+   opacity: 0.5;
 }
 
 #main {
     transition: margin-left .5s;
     padding: 16px;
 }
+
+@media (min-width: 310px) and (max-width: 372.98px){
+
+
+    .delivery__item img{
+
+        height: 70px
+    }
+     
+    .delivery__item p{
+
+        font-size: 12px
+    }
+
+    .delivery__item {
+     padding-bottom: 5px;
+    }
+
+    .delivery__title{
+        font-size: 20px;
+    }
+   
+    .logistic{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .partners__carousele{
+        padding-bottom: 20px;
+    }
+
+    .profit__item{
+        align-items: flex-start
+     
+    }
+
+    .profit__text{
+        /* padding-right: 20px; */
+        margin: 0;
+    }
+
+    .proft{
+        display: flex;
+        justify-content: flex-start
+    }
+    .profit__ico{
+        /* margin: 0; */
+    }
+}
+
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -475,13 +525,14 @@ input::placeholder {
         /* display: none */
     }
 
+    .logistic{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
    
 
    
 }
-
-
-
 
 
 
@@ -528,7 +579,7 @@ input::placeholder {
     }
 
     .profit__item {
-        justify-content: center
+        /* justify-content: center */
     }
 
     .taobao__line-left {
@@ -646,12 +697,11 @@ input::placeholder {
     }
 
     td img{
-       /* padding-top: 40px; */
-       /* display: none */
+    
     }
 
     th p{
-       /* display: none */
+  
        font-size: 15px; 
        width: 48px;
        margin-right: 48px;
@@ -659,8 +709,7 @@ input::placeholder {
     }
 
     .table__diff{
-        /* width: 100px */
-        /* display: none */
+  
     }
 
     .vetrtical-big{
