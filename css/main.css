@@ -137,9 +137,7 @@ body{
     font-size: 18px;
 }
 
-/* .vertical-big{
-    height: 30%;
-} */
+
 
 .taobao-container {
     padding-bottom: 39px;
@@ -184,13 +182,11 @@ body{
 }
 
 .partner__text {
-    /* margin: 0 auto; */
     width: 522px;
     padding-top: 30px;
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
-
     color: #3C2467;
 
 }
@@ -236,7 +232,6 @@ body{
 
 .logistic__gantelya {
     padding-right: 22px;
-    /* max-width: 40%; */
     height: auto;
     display: flex;
     flex-direction: row
@@ -260,17 +255,12 @@ body{
     font-size: 18px;
     line-height: 25px;
     text-align: center;
-
     color: #3C2467;
 }
 
 
 th{
     padding-right: 0;
-}
-
-.partner__logo-mobile{
-    /* margin-left: 5px; */
 }
 
 footer {
@@ -295,7 +285,6 @@ footer {
 #button-up {
     display: none;
     opacity: 0.5;
-    /* filter:alpha(opacity=50); */
     position: fixed;
     right: 30px;
     bottom: 50px;
@@ -310,7 +299,6 @@ footer {
 
 #button-up:hover {
     cursor: pointer;
-    /* opacity: 1; */
     filter: alpha(opacity=100);
     transition: .3s;
     color: #330570;
@@ -419,7 +407,7 @@ input::placeholder {
     right: 0;
     background-color: #FAFAFA;
     /* overflow-x: hidden; */
-    transition: 0.5s;
+    transition: 0.2s;
     padding-top: 60px;
     box-shadow: 0px 5.5px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
 }
@@ -445,9 +433,7 @@ input::placeholder {
 .sidebar .closebtn {
     position: absolute;
     top: 10px;
-    /* right: 25px; */
     font-size: 36px;
-    /* margin-left: 10px; */
 }
 
 .openbtn {
@@ -462,9 +448,12 @@ input::placeholder {
 }
 
 #main {
-    transition: margin-left .5s;
+    transition: 5s;
     padding: 16px;
 }
+
+
+
 
 @media (min-width: 310px) and (max-width: 372.98px){
 
@@ -527,7 +516,7 @@ input::placeholder {
     }
 
     #main {
-        /* display: none */
+
     }
 
     .logistic{
@@ -543,6 +532,11 @@ input::placeholder {
 
 
 @media (max-width: 575.98px) {
+
+    .top{
+        display: none
+    }
+
     #offer__truck {
         display: none;
 
@@ -668,7 +662,7 @@ input::placeholder {
 
     .offer__descr {
         width: 90%;
-        /* text-align: center */
+
         padding-top: 38px;
     }
 
@@ -681,11 +675,11 @@ input::placeholder {
     }
 
     #main {
-        /* display: none; */
+
     }
 
     .sidebar {
-        height: 180px;
+        height: 220px;
         opacity: 0.9;
         width: 180px;
 
@@ -838,7 +832,11 @@ input::placeholder {
     }
 
     #main {
-        display: none;
+
+    }
+
+    .sidebar{
+        height: 250px;
     }
 
 }
@@ -956,7 +954,7 @@ input::placeholder {
     }
 
     #main {
-        /* display: none; */
+
     }
 
     .sidebar {
@@ -971,6 +969,10 @@ input::placeholder {
         transition: 0.5s;
         padding-top: 60px;
         box-shadow: 0px 5.5px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
+    }
+
+    #ToTop{
+        display: none
     }
 
 
@@ -993,6 +995,10 @@ input::placeholder {
 
     }
 
+    #ToTop{
+        display: none
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -1001,6 +1007,9 @@ input::placeholder {
     }
 
     .mobile {
+        display: none
+    }
+    #ToTop{
         display: none
     }
 
