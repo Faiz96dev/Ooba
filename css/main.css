@@ -358,6 +358,11 @@ footer {
 
 }
 
+.modal__form{
+    display: flex;
+    flex-direction: column
+}
+
 .modal__btn {
     margin-bottom: 22px;
     border-radius: 25px;

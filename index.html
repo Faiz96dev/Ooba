@@ -30,10 +30,13 @@
         <div class="container ">
 
             <div class="row justify-content-between ">
-                <div class="col-lg-12 d-flex justify-content-between"><img class="animated flipInX" src="img/Logo.svg" alt="logo">  <div id="main">
+                <div class="col-lg-12 d-flex justify-content-between"><img class="animated flipInX" src="img/Logo.svg"
+                        alt="logo">
+                    <div id="main">
                         <button class="openbtn " onclick="openNav()">☰ </button>
 
-                    </div></div>
+                    </div>
+                </div>
                 <!-- <div class="col-lg-1 d-flex justify-content-end ">
                    
                 </div> -->
@@ -45,7 +48,8 @@
                             Ooba Business - постройте бизнес с Китаем с нами!
                         </h1>
                         <img class="offer__min-truck" src="img/Truck-min.svg" alt="">
-                        <button  data-toggle="modal" data-target="#basicExampleModal" class="offer__btn">Заказать звонок</button>
+                        <button data-toggle="modal" data-target="#basicExampleModal" class="offer__btn">Заказать
+                            звонок</button>
                         <div class="offer__itro-text-container">
                             <h2 class="offer__intro"> О нашем сервисе</h2>
                             <p class="offer__text"> Мы работаем над тем, чтобы дать нашим партнерам больше возможностей
@@ -164,47 +168,63 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row"><p>Отслеживание посылки</p></th>
+                            <th scope="row">
+                                <p>Отслеживание посылки</p>
+                            </th>
 
                             <td><img src="img/yep.png" alt=""></td>
                             <td><img src="img/yep.png" alt=""></td>
                         </tr>
                         <tr>
-                            <th scope="row"><p>Таможенные консультации</p></th>
+                            <th scope="row">
+                                <p>Таможенные консультации</p>
+                            </th>
                             <td><img src="img/yep.png" alt=""></td>
                             <td><img src="img/yep.png" alt=""></td>
                         </tr>
                         <tr>
-                            <th scope="row"><p>Персональный специалист</p></th>
+                            <th scope="row">
+                                <p>Персональный специалист</p>
+                            </th>
                             <td><img src="img/yep.png" alt=""></td>
                             <td><img src="img/yep.png" alt=""></td>
                         </tr>
                         <tr>
-                            <th scope="row"><p>Индивидуальный тариф</p></th>
+                            <th scope="row">
+                                <p>Индивидуальный тариф</p>
+                            </th>
                             <td><img src="img/no.png" alt=""></td>
                             <td><img src="img/yep.png" alt=""></td>
 
                         </tr>
                         <tr>
-                            <th scope="row"><p>Доступ к платформам Taobao Tmall</p></th>
+                            <th scope="row">
+                                <p>Доступ к платформам Taobao Tmall</p>
+                            </th>
                             <td><img src="img/no.png" alt=""></td>
                             <td><img src="img/yep.png" alt=""></td>
 
                         </tr>
                         <tr>
-                            <th scope="row"><p>Доступ к платформам 1168 Alibaba</p></th>
+                            <th scope="row">
+                                <p>Доступ к платформам 1168 Alibaba</p>
+                            </th>
                             <td><img src="img/no.png" alt=""></td>
                             <td><img src="img/yep.png" alt=""></td>
 
                         </tr>
                         <tr>
-                            <th scope="row"><p>Поиск нужного товара</p></th>
+                            <th scope="row">
+                                <p>Поиск нужного товара</p>
+                            </th>
                             <td><img src="img/no.png" alt=""></td>
                             <td><img src="img/yep.png" alt=""></td>
 
                         </tr>
                         <tr>
-                            <th scope="row"><p>Помощь в выборе товара</p></th>
+                            <th scope="row">
+                                <p>Помощь в выборе товара</p>
+                            </th>
                             <td><img src="img/no.png" alt=""></td>
                             <td><img src="img/yep.png" alt=""></td>
 
@@ -452,14 +472,14 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <input class="modal__window" placeholder="Введите ваше имя" type="text">
-                    <input class="modal__window" type="number" placeholder="Введите ваш номер телефона" type="text">
+                            <form method="post" class="modal__form" onsubmit="return false;" action="">
+                                <input id='name' type="text" class="modal__window" placeholder="Введите ваше имя">
+                                <input required="" type="tel" name="phone" id="phone" class="modal__window" type="number"
+                                    placeholder="Введите ваш номер телефона" type="text"></form>
+
                 </div>
-                <div class="modal__btn-wrapper"><button type="button" class="modal__btn"
-                        data-dismiss="modal">Оставить</button></div>
-
-
-
+                <div class="modal__btn-wrapper"><button type="submit" type="button" class="modal__btn" onClick={sendData()}
+                    data-dismiss="modal">Оставить</button></div>
             </div>
         </div>
     </div>
@@ -482,6 +502,7 @@
                             сделать
                             это легко и выгодно!</p>
                         <div class="footer__contact">
+
                             <div class="footer__phone"><img src="img/phone.png" alt=""></div>
                             <p>0551 53 55 55</p>
                         </div>
@@ -491,6 +512,7 @@
                 </div>
             </div>
         </footer>
+    
         <!-- JQuery -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <!-- Bootstrap tooltips -->

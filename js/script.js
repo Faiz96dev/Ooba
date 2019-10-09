@@ -18,22 +18,6 @@ $(document).ready(function() {
   });
 });
 
-var http = new XMLHttpRequest();
-var url = "get_data.php";
-var params = "orem=ipsum&name=binny";
-http.open("POST", url, true);
-
-//Send the proper header information along with the request
-http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-http.onreadystatechange = function() {
-  //Call a function when the state changes.
-  if (http.readyState == 4 && http.status == 200) {
-    alert(http.responseText);
-  }
-};
-http.send(params);
-
 $(document).ready(function() {
   $("#mySidebar").on("click", "a", function(event) {
     event.preventDefault();
@@ -60,4 +44,25 @@ $(document).ready(function() {
     autoplaySpeed: 2000,
     arrows: false
   });
+});
+
+function sendData() {
+  const client_name = document.getElementById("name").value;
+  const client_phone = document.getElementById("phone").value;
+  console.log(client_name, client_phone);
+}
+$.ajax({
+  type: "POST",
+  data: {
+    phone: client_phone,
+    name: client_name
+  },
+  url: "https://",
+  success: function(data) {
+    data = JSON.parse(data);
+    consol.log(data);
+  },
+  error: function(xhr, status, error) {
+    console.log(xhr.statusText, xhr.responseText, status, error);
+  }
 });
