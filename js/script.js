@@ -23,9 +23,12 @@ $(document).ready(function() {
     event.preventDefault();
     var id = $(this).attr("href"),
       top = $(id).offset().top;
-    $("body,html").animate({ scrollTop: top }, 1200);
+    $("body,html").animate({ scrollTop: top }, 600);
   });
 });
+
+
+
 
 function openNav() {
   document.getElementById("mySidebar").style.width = "210px";
