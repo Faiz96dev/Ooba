@@ -280,7 +280,7 @@ footer {
 
 
 
-.footer__wrapper {}
+
 
 #button-up {
     display: none;
@@ -399,7 +399,17 @@ input::placeholder {
 
 
 
-
+.footer__btn{
+    /* margin-top: 32px; */
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    width: 124px;
+    height: 48px;
+    color: white;
+    margin-top: 10px;
+}
 
 
 
@@ -469,19 +479,7 @@ input::placeholder {
 };
 
 
-.ToTopBtn{
-    margin-top: 32px;
-    border-radius: 25px;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    background: #592D87;
-    width: 154px;
-    height: 38px;
-    color: white;
-    font-family: Roboto;
-    font-size: 13px;
-}
+
 
 
 @media (min-width: 310px) and (max-width: 372.98px){
@@ -531,6 +529,10 @@ input::placeholder {
     .profit__ico{
         /* margin: 0; */
     }
+
+    .footer__descr{
+        display:none
+    }
 }
 
 
@@ -551,7 +553,9 @@ input::placeholder {
         padding-bottom: 10px;
     }
    
-
+    .footer__descr{
+        display:none
+    }
    
 }
 
@@ -559,7 +563,7 @@ input::placeholder {
 @media (max-width: 575.98px) {
 
     .top{
-        /* display: none */
+        display: none
     }
 
     #offer__truck {
@@ -718,6 +722,15 @@ input::placeholder {
     .vetrtical-big{
         display: none
     }
+
+    .footer__descr{
+        display:none
+    }
+
+    .footer__logo{
+        display: none
+    }
+  
 }
 
 
@@ -729,7 +742,9 @@ input::placeholder {
         display: none;
 
     }
-
+    .top{
+        display: none;
+    }
     .offer__truck-container {
         display: none
     }
@@ -842,9 +857,7 @@ input::placeholder {
 
     }
 
-    /* .sidebar{
-        height: 250px;
-    } */
+
 
 }
 
@@ -982,7 +995,9 @@ input::placeholder {
     #ToTop{
         display: none
     }
-
+    .footer__top{
+        display: none
+    }
 
 }
 
@@ -1006,6 +1021,9 @@ input::placeholder {
     #ToTop{
         display: none
     }
+    .footer__top{
+        display: none
+    }
 
 }
 
@@ -1021,4 +1039,7 @@ input::placeholder {
         display: none
     }
 
+    .footer__top{
+        display: none
+    }
 }
