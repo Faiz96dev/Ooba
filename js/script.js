@@ -16,15 +16,16 @@ $(document).ready(function() {
     );
     return false;
   });
-});
-
-$(document).ready(function() {
   $("#mySidebar").on("click", "a", function(event) {
     event.preventDefault();
     var id = $(this).attr("href"),
       top = $(id).offset().top;
     $("body,html").animate({ scrollTop: top }, 600);
   });
+});
+
+$(document).ready(function() {
+
 });
 
 
@@ -69,3 +70,12 @@ $.ajax({
     console.log(xhr.statusText, xhr.responseText, status, error);
   }
 });
+
+
+// if (screen.width < 600) {
+
+// }
+
+// else{
+
+// }
