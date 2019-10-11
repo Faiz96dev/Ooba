@@ -14,11 +14,11 @@ h1,
 h2,
 h3,
 h4 {
-    /* font-weight: bold; */
+
     color: #000000;
 }
 
-body{
+body {
     padding: 0;
     margin: 0;
 }
@@ -52,6 +52,7 @@ body{
     outline: none;
 }
 
+
 .offer__truck-container {
     padding-top: 30px;
 }
@@ -72,7 +73,6 @@ body{
 
 .offer__descr {
     width: 611px;
-    /* text-align: center */
     padding-top: 38px;
 }
 
@@ -90,9 +90,7 @@ body{
 
 }
 
-.wrapper {
-    /* display: flex; */
-}
+.wrapper {}
 
 .circle {
     padding-top: 17%;
@@ -260,7 +258,7 @@ body{
 }
 
 
-th{
+th {
     padding-right: 0;
 }
 
@@ -278,9 +276,6 @@ footer {
 .footer__logo {
     padding-top: 20px;
 }
-
-
-
 
 
 #button-up {
@@ -307,11 +302,12 @@ footer {
 
 .top {
     height: 60px;
+    border-radius: 35px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 
 .partner__container {
-    /* height: 100px; */
     width: 500px;
 
 
@@ -332,8 +328,8 @@ footer {
 
 }
 
-.footer__phone  img{
-  
+.footer__phone img {
+
     height: 15px;
 }
 
@@ -341,19 +337,17 @@ footer {
 .modal-body {
     display: flex;
     flex-direction: column;
-    /* border-radius: 5px; */
 }
 
 .modal__window {
     border-radius: 5px;
     margin-bottom: 10px;
     border: 1px solid gray;
-    /* margin-right: 10px; */
     text-indent: 10px;
 
 }
 
-.modal__form{
+.modal__form {
     display: flex;
     flex-direction: column
 }
@@ -370,6 +364,7 @@ footer {
     color: white;
     font-family: Roboto;
     font-size: 13px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 
 }
 
@@ -395,21 +390,20 @@ input::placeholder {
     font-size: 12px;
     font-size: 1.2em;
     outline: none;
-    /* font-style: italic; */
 }
 
 
 
-.footer__btn{
-    /* margin-top: 32px; */
+.footer__btn {
     border-radius: 25px;
     cursor: pointer;
     outline: none;
     border: 0;
-    width: 124px;
+    width: 54px;
     height: 48px;
     color: white;
     margin-top: 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -425,12 +419,12 @@ input::placeholder {
     background-color: #FAFAFA;
     overflow-x: hidden;
     transition: 0.2s;
-    padding-top:50px;
+    padding-top: 50px;
     box-shadow: 0px 5.5px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
 }
 
 .sidebar a {
-    padding: 8px 8px 8px ;
+    padding: 8px 8px 8px;
     text-decoration: none;
     color: #555555;
     display: block;
@@ -460,7 +454,7 @@ input::placeholder {
 }
 
 .openbtn:hover {
-   opacity: 0.5;
+    opacity: 0.5;
 }
 
 #main {
@@ -469,75 +463,72 @@ input::placeholder {
 }
 
 
-
-.footer__top{
+.footer__top {
     height: 30px;
-    
-   
+
+
     display: flex;
     justify-content: center;
-    
-};
+
+}
+
+;
 
 
 
 
+@media (min-width: 310px) and (max-width: 372.98px) {
 
-@media (min-width: 310px) and (max-width: 372.98px){
 
-
-    .delivery__item img{
+    .delivery__item img {
 
         height: 70px
     }
-     
-    .delivery__item p{
+
+    .delivery__item p {
 
         font-size: 12px
     }
 
     .delivery__item {
-     padding-bottom: 5px;
+        padding-bottom: 5px;
     }
 
-    .delivery__title{
+    .delivery__title {
         font-size: 20px;
     }
-   
-    .logistic{
+
+    .logistic {
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
-    .partners__carousele{
+    .partners__carousele {
         padding-bottom: 20px;
     }
 
-    .profit__item{
+    .profit__item {
         align-items: flex-start
-     
     }
 
-    .profit__text{
-        /* padding-right: 20px; */
+    .profit__text {
         margin: 0;
     }
 
-    .proft{
+    .proft {
         display: flex;
         justify-content: flex-start
     }
-    .profit__ico{
-        /* margin: 0; */
-    }
 
-    .footer__descr{
-        display:none
+    .profit__ico {}
+
+    .footer__descr {
+        display: none
     }
 }
 
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
 @media screen and (max-height: 450px) {
     .sidebar {
         padding-top: 15px;
@@ -547,23 +538,23 @@ input::placeholder {
         font-size: 18px;
     }
 
-  
 
-    .logistic{
+
+    .logistic {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-   
-    .footer__descr{
-        display:none
+
+    .footer__descr {
+        display: none
     }
-   
+
 }
 
 
 @media (max-width: 575.98px) {
 
-    .top{
+    .top {
         display: none
     }
 
@@ -595,6 +586,7 @@ input::placeholder {
         align-items: center;
         margin-left: 25%;
     }
+
 
     .offer__title {
         margin-top: 30px;
@@ -696,56 +688,50 @@ input::placeholder {
     }
 
 
-    .sidebar{
-        /* display: none */
-    }
+    .sidebar {}
 
-    .openbtn{
-        /* display: none */
-    }
+    .openbtn {}
 
- 
-    .mob img{
+
+    .mob img {
         width: 150px
     }
 
 
-    th p{
-  
-       font-size: 15px; 
-       width: 48px;
-       margin-right: 48px;
-       
+    th p {
+
+        font-size: 15px;
+        width: 48px;
+        margin-right: 58px;
+
     }
 
-  
 
-    .vetrtical-big{
+
+    .vetrtical-big {
         display: none
     }
 
-    .footer__descr{
-        display:none
-    }
-
-    .footer__logo{
+    .footer__descr {
         display: none
     }
-  
+
+    .footer__logo {
+        display: none
+    }
+
 }
-
-
-
-
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     #offer__truck {
         display: none;
 
     }
-    .top{
+
+    .top {
         display: none;
     }
+
     .offer__truck-container {
         display: none
     }
@@ -816,18 +802,14 @@ input::placeholder {
 
     .partner__block-container {
         display: flex;
-        /* justify-content: center */
-        /* width: 100%; */
     }
 
     .partner__block {
         display: flex;
         justify-content: center;
-        /* background: #000; */
-
     }
 
-    
+
 
     .partner__card-text {
         display: flex;
@@ -854,9 +836,7 @@ input::placeholder {
 
     }
 
-    #main {
-
-    }
+    #main {}
 
 
 
@@ -945,8 +925,6 @@ input::placeholder {
     .partner__block {
         display: flex;
         justify-content: center;
-
-
     }
 
     .partner__card-text {
@@ -975,9 +953,7 @@ input::placeholder {
         display: none
     }
 
-    #main {
-
-    }
+    #main {}
 
     .sidebar {
         height: 230px;
@@ -993,10 +969,11 @@ input::placeholder {
         box-shadow: 0px 5.5px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
     }
 
-    #ToTop{
+    #ToTop {
         display: none
     }
-    .footer__top{
+
+    .footer__top {
         display: none
     }
 
@@ -1019,10 +996,11 @@ input::placeholder {
 
     }
 
-    #ToTop{
+    #ToTop {
         display: none
     }
-    .footer__top{
+
+    .footer__top {
         display: none
     }
 
@@ -1036,11 +1014,12 @@ input::placeholder {
     .mobile {
         display: none
     }
-    #ToTop{
+
+    #ToTop {
         display: none
     }
 
-    .footer__top{
+    .footer__top {
         display: none
     }
 }
