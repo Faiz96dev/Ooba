@@ -706,6 +706,10 @@ input::placeholder {
 
     }
 
+    td img{
+     padding-left: 20px;
+    }
+
 
 
     .vetrtical-big {
