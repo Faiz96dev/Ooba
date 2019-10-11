@@ -27,8 +27,6 @@ $(document).ready(function() {
 
 
 
-
-
 function openNav() {
   document.getElementById("mySidebar").style.width = "210px";
   document.getElementById("main").style.marginLeft = "210px";
@@ -69,11 +67,3 @@ $.ajax({
   }
 });
 
-
-// if (screen.width < 600) {
-
-// }
-
-// else{
-
-// }

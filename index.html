@@ -490,7 +490,7 @@
                     <div class="col-lg-2">
                         <div class="footer__container">
                             <img class="footer__logo" src="img/logo white.png" alt="logo">
-                            <div class="footer__top"> <img class="footer__btn"  onclick="location.href='#top'" src="img/big-arrow.svg" alt=""> </div>
+                            <div class="footer__top"> <img class="footer__btn"  href="#top" src="img/big-arrow.svg" alt=""> </div>
                            
                             <p class="footer__text">© 2015-2019 <br> ooba.kg</p>
                         </div>
@@ -528,6 +528,26 @@
         <script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
 
         <script src="js/script.js"></script>
+        <script>
+        $(function(){
+  $('img[href^="#"]').on('click', function(event) {
+    // отменяем стандартное действие
+    event.preventDefault();
+    
+    var sc = $(this).attr("href"),
+        dn = $(sc).offset().top;
+    /*
+    * sc - в переменную заносим информацию о том, к какому блоку надо перейти
+    * dn - определяем положение блока на странице
+    */
+    
+    $('html, body').animate({scrollTop: dn}, 1000);
+    
+    /*
+    * 1000 скорость перехода в миллисекундах
+    */
+  });
+});</script>
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <a data-toggle="modal" data-target="#basicExampleModal" href="#"> <img src="img/nav-icons/phone.png" alt="">

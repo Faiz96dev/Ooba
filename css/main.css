@@ -45,6 +45,7 @@ body{
     color: white;
     font-family: Roboto;
     font-size: 13px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 .offer__btn:focus {
